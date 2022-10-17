@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+  
+  welcome:
+    image: enzocasalini/enzo-react:main
+    container_name: welcome
+    
+  gateway:
+    image: quarfein/gateway
+    container_name: gateway
+    ports:
+     - "80:80"
+   
